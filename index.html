@@ -1,70 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criativiarte - Agência de Marketing Digital</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Minha landing page</title>
+	<style>
+		body {
+			background-color: #f2f2f2; /* cor de fundo */
+			font-family: Arial, sans-serif; /* fonte padrão */
+			margin: 0; /* remove margens */
+			padding: 0; /* remove padding */
+		}
+		form {
+			background-color: #fff; /* cor de fundo do formulário */
+			margin: 50px auto; /* centraliza o formulário */
+			max-width: 500px; /* largura máxima do formulário */
+			padding: 20px; /* espaço interno */
+			text-align: center; /* centraliza o conteúdo */
+			border-radius: 10px; /* arredonda as bordas */
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* sombra */
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			display: block; /* exibe os inputs como blocos */
+			margin: 10px 0; /* adiciona uma margem */
+			padding: 10px; /* espaço interno */
+			width: 100%; /* largura total */
+			border: 1px solid #ccc; /* borda */
+			border-radius: 5px; /* arredonda as bordas */
+			font-size: 16px; /* tamanho da fonte */
+			font-family: Arial, sans-serif; /* fonte padrão */
+			box-sizing: border-box; /* inclui a borda no tamanho total */
+		}
+		input[type="submit"] {
+			background-color: #4CAF50; /* cor de fundo do botão */
+			color: #fff; /* cor do texto do botão */
+			border: none; /* remove a borda */
+			padding: 10px 20px; /* espaço interno */
+			text-align: center; /* centraliza o conteúdo */
+			display: inline-block; /* exibe o botão como um bloco */
+			font-size: 16px; /* tamanho da fonte */
+			border-radius: 5px; /* arredonda as bordas */
+			cursor: pointer; /* muda o cursor ao passar o mouse sobre o botão */
+			transition: background-color 0.3s ease; /* transição suave */
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41; /* cor de fundo do botão ao passar o mouse */
+		}
+	</style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Criativiarte</h1>
-      <h2>Agência de Marketing Digital</h2>
-      <a href="#" class="cta">Saiba Mais</a>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h2>Serviços</h2>
-      <p>Descrição dos serviços da agência de marketing digital</p>
-      <ul>
-        <li>Serviço 1</li>
-        <li>Serviço 2</li>
-        <li>Serviço 3</li>
-        <li>Serviço 4</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Portfólio</h2>
-      <p>Galeria de trabalhos realizados pela agência de marketing digital</p>
-      <ul>
-        <li><img src="imagem1.jpg" alt="Descrição da imagem"></li>
-        <li><img src="imagem2.jpg" alt="Descrição da imagem"></li>
-        <li><img src="imagem3.jpg" alt="Descrição da imagem"></li>
-        <li><img src="imagem4.jpg" alt="Descrição da imagem"></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contato</h2>
-      <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2023 Criativiarte - Agência de Marketing Digital. Todos os direitos reservados.</p>
-  </footer>
+	<form>
+		<h1>Entre em contato</h1>
+		<input type="text" placeholder="Seu nome" required>
+		<input type="email" placeholder="Seu e-mail" required>
+		<textarea placeholder="Digite sua mensagem" rows="6" required></textarea>
+		<input type="submit" value="Enviar">
+	</form>
 </body>
 </html>
