@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Minha landing page</title>
-	<style>
-		body {
-			background-color: #f2f2f2; /* cor de fundo */
-			font-family: Arial, sans-serif; /* fonte padrão */
-			margin: 0; /* remove margens */
-			padding: 0; /* remove padding */
-		}
-		form {
-			background-color: #fff; /* cor de fundo do formulário */
-			margin: 50px auto; /* centraliza o formulário */
-			max-width: 500px; /* largura máxima do formulário */
-			padding: 20px; /* espaço interno */
-			text-align: center; /* centraliza o conteúdo */
-			border-radius: 10px; /* arredonda as bordas */
-			box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* sombra */
-		}
-		input[type="text"],
-		input[type="email"],
-		textarea {
-			display: block; /* exibe os inputs como blocos */
-			margin: 10px 0; /* adiciona uma margem */
-			padding: 10px; /* espaço interno */
-			width: 100%; /* largura total */
-			border: 1px solid #ccc; /* borda */
-			border-radius: 5px; /* arredonda as bordas */
-			font-size: 16px; /* tamanho da fonte */
-			font-family: Arial, sans-serif; /* fonte padrão */
-			box-sizing: border-box; /* inclui a borda no tamanho total */
-		}
-		input[type="submit"] {
-			background-color: #4CAF50; /* cor de fundo do botão */
-			color: #fff; /* cor do texto do botão */
-			border: none; /* remove a borda */
-			padding: 10px 20px; /* espaço interno */
-			text-align: center; /* centraliza o conteúdo */
-			display: inline-block; /* exibe o botão como um bloco */
-			font-size: 16px; /* tamanho da fonte */
-			border-radius: 5px; /* arredonda as bordas */
-			cursor: pointer; /* muda o cursor ao passar o mouse sobre o botão */
-			transition: background-color 0.3s ease; /* transição suave */
-		}
-		input[type="submit"]:hover {
-			background-color: #3e8e41; /* cor de fundo do botão ao passar o mouse */
-		}
-	</style>
-</head>
-<body>
-	<form>
-		<h1>Entre em contato</h1>
-		<input type="text" placeholder="Seu nome" required>
-		<input type="email" placeholder="Seu e-mail" required>
-		<textarea placeholder="Digite sua mensagem" rows="6" required></textarea>
-		<input type="submit" value="Enviar">
-	</form>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Criativiarte</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      section {
+        padding: 50px;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+      
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      button:hover {
+        background-color: #555;
+      }
+      
+      footer {
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Portfólio</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section>
+      <h1>Criativiarte</h1>
+      <p>Somos uma agência de marketing digital especializada em aumentar a visibilidade e conversão do seu negócio.</p>
+      <button>Entre em contato</button>
+    </section>
+    
+    <footer>
+      <p>Todos os direitos reservados © Criativiarte 2021</p>
+    </footer>
+  </body>
 </html>
